@@ -1,0 +1,17 @@
+{
+  
+
+  "name": "defendx",
+  "version": "1.0.0",
+  "description": "Let's Do It.",
+  "main": "index.js",
+  "scripts": {
+    "start-backend": "node backend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
