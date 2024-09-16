@@ -1,13 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Expert Selection System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><i class="fas fa-brain"></i>ExpertSelect</div>
+            <nav><ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="#experts"><i class="fas fa-user-tie"></i>Experts</a></li>
+                <li><a href="#candidates"><i class="fas fa-users"></i>Candidates</a></li>
+                <li><a href="#matching"><i class="fas fa-puzzle-piece"></i>Matching</a></li>
+            </ul></nav>
+        </aside>
+        <main class="content">
+            <section id="home" class="active">
+                <h1><i class="fas fa-chart-line"></i>Dashboard</h1>
+                <div class="quick-stats">
+                    <div class="stat"><i class="fas fa-user-tie fa-2x"></i><h3>Total Experts</h3><p>50</p></div>
+                    <div class="stat"><i class="fas fa-users fa-2x"></i><h3>Total Candidates</h3><p>100</p></div>
+                    <div class="stat"><i class="fas fa-tasks fa-2x"></i><h3>Pending Matches</h3><p>25</p></div>
+                </div>
+                <div class="quick-actions">
+                    <button><i class="fas fa-play"></i>New Match</button>
+                    <button><i class="fas fa-user-plus"></i>Add Expert</button>
+                    <button><i class="fas fa-user-graduate"></i>Add Candidate</button>
+                </div>
+            </section>
+            <section id="experts">
+                <h2><i class="fas fa-user-tie"></i>Expert Profiles</h2>
+                <input type="text" placeholder="Search by expertise or name" class="search-bar">
+                <div class="tag-container">
+                    <span class="tag">Engineering</span>
+                    <span class="tag">Marketing</span>
+                    <span class="tag">Finance</span>
+                </div>
+                <ul class="list">
+                    <li>
+                        <h3>John Doe</h3>
+                        <p><i class="fas fa-id-badge"></i>Employee ID: E001</p>
+                        <p><i class="fas fa-laptop-code"></i>Primary Expertise: Software Engineering</p>
+                    </li>
+                </ul>
+                <button class="add-btn"><i class="fas fa-plus"></i>Add New Expert</button>
+            </section>
+            <section id="candidates">
+                <h2><i class="fas fa-users"></i>Candidates</h2>
+                <input type="text" placeholder="Search by area of interest or name" class="search-bar">
+                <ul class="list">
+                    <li>
+                        <h3>Jane Smith</h3>
+                        <p><i class="fas fa-id-card"></i>Application ID: C001</p>
+                        <p><i class="fas fa-chart-bar"></i>Primary Area of Interest: Data Science</p>
+                    </li>
+                </ul>
+                <button class="add-btn"><i class="fas fa-plus"></i>Add New Candidate</button>
+            </section>
+            <section id="matching">
+                <h2><i class="fas fa-puzzle-piece"></i>Match Processing</h2>
+                <button id="start-matching"><i class="fas fa-play"></i>Start Matching</button>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <div id="match-results"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
