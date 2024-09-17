@@ -1,0 +1,76 @@
+{
+    "candidates": [
+      {
+        "id": "CAND001",
+        "name": "Priya Sharma",
+        "exam_cleared": {
+          "name": "DRDO CEPTAM",
+          "advertisement_id": "DRDO-CEPTAM-10/A&A"
+        },
+        "resume": "Experienced software engineer with expertise in Java and Python. Passionate about defense technology and innovation."
+      },
+      {
+        "id": "CAND002",
+        "name": "Rahul Verma",
+        "exam_cleared": {
+          "name": "DRDO Entry Test",
+          "advertisement_id": "DRDO-ET-2023"
+        },
+        "resume": "Recent graduate in Aerospace Engineering. Strong analytical skills and experience in CAD software."
+      },
+      {
+        "id": "CAND003",
+        "name": "Ananya Gupta",
+        "exam_cleared": {
+          "name": "DRDO CEPTAM",
+          "advertisement_id": "DRDO-CEPTAM-10/TECH-A"
+        },
+        "resume": "Electronics engineer with 3 years of experience in embedded systems. Proficient in C++ and VHDL."
+      },
+      {
+        "id": "CAND004",
+        "name": "Vikram Singh",
+        "exam_cleared": {
+          "name": "DRDO SRF",
+          "advertisement_id": "DRDO-SRF-2023"
+        },
+        "resume": "PhD in Material Science. Research experience in nanomaterials and their applications in defense technology."
+      },
+      {
+        "id": "CAND005",
+        "name": "Neha Patel",
+        "exam_cleared": {
+          "name": "DRDO CEPTAM",
+          "advertisement_id": "DRDO-CEPTAM-10/ADMIN"
+        },
+        "resume": "MBA in Human Resources. 5 years of experience in talent acquisition and employee relations."
+      }
+    ],
+    "experts": [
+      {
+        "id": "EXP001",
+        "name": "Dr. Rajesh Kumar",
+        "resume": "Senior Scientist at DRDO with 15 years of experience in missile technology. PhD in Propulsion Systems."
+      },
+      {
+        "id": "EXP002",
+        "name": "Prof. Sunita Desai",
+        "resume": "Professor of Computer Science specializing in AI and Machine Learning. Consultant for DRDO's cybersecurity division."
+      },
+      {
+        "id": "EXP003",
+        "name": "Col. Ajay Mehra (Retd.)",
+        "resume": "Former military officer with expertise in defense strategies. Now a strategic consultant for DRDO projects."
+      },
+      {
+        "id": "EXP004",
+        "name": "Dr. Meera Reddy",
+        "resume": "Chief Scientist at DRDO's Life Sciences division. Specializes in biodefense and has multiple patents."
+      },
+      {
+        "id": "EXP005",
+        "name": "Er. Sanjay Malhotra",
+        "resume": "Principal Engineer with 20 years of experience in radar systems. Lead developer for DRDO's advanced surveillance projects."
+      }
+    ]
+  }

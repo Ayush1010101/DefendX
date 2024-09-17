@@ -1,28 +1,38 @@
-import React, { useEffect } from "react";
-import "./App.css"
-import Dashboard from "./components/dashboard";
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
+import Experts from './components/Experts';
+import Candidates from './components/Candidates';
+import Matching from './components/Matching';
+import './App.css';
 
-const App = () => {
+function App() {
+  const [activeSection, setActiveSection] = useState('home');
+  const [isMatching, setIsMatching] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:3000/");
-        const data = await response.json();
-        console.log(data);
-      } catch (error) {
-        console.log("Error fetching data:", error);
-      }
-    };
+  const startMatching = () => {
+    setIsMatching(true);
+  };
 
-    fetchData();
-  }, []);
- 
   return (
-  <>
-    <Dashboard></Dashboard>
-  </>
-)
+    <div className="container">
+      <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
+      <main className="content">
+        <Dashboard 
+          active={activeSection === 'home'} 
+          setActiveSection={setActiveSection}
+          startMatching={startMatching}
+        />
+        <Experts active={activeSection === 'experts'} />
+        <Candidates active={activeSection === 'candidates'} />
+        <Matching 
+          active={activeSection === 'matching'} 
+          isMatching={isMatching}
+          setIsMatching={setIsMatching}
+        />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
