@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import demoData from './demo.json';
+import CandidateExpertForm from './ui/popUp';
 
 function Dashboard({ active, setActiveSection, startMatching }) {
   const [expertCount, setExpertCount] = useState(0);
@@ -27,8 +28,7 @@ function Dashboard({ active, setActiveSection, startMatching }) {
       </div>
       <div className="quick-actions">
         <button onClick={handleNewMatch}><i className="fas fa-play"></i>New Match</button>
-        <button><i className="fas fa-user-plus"></i>Add Expert</button>
-        <button><i className="fas fa-user-graduate"></i>Add Candidate</button>
+        <CandidateExpertForm></CandidateExpertForm>
       </div>
     </section>
   );
